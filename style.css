@@ -9,7 +9,7 @@
 }
 
 .main{
-    /* margin: 10em auto; */
+    margin: 10em auto;
     font-family: 'Hanken Grotesk';
     border-radius: 30px;
     max-width: 47em;
@@ -96,12 +96,17 @@
     grid-template-rows: repeat(6,1fr);
     row-gap: 1em;
 }
+.whitebox h3{
+    font-size: 21px;
+    margin-top:20px;
+    font-weight: 800;
+}
 .box{
     display: flex;
     justify-content: space-between;
     border: solid green;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 20px;
     border-radius: 10px;
     font-weight: 700;
     border: none;
@@ -112,15 +117,47 @@
     justify-content: space-around;
     gap:0.4em;
     text-align: start;
-
 }
+
 .box.red{
+    color:hsl(0, 100%, 67%);
     background-color:hsl(0, 100%, 67%, 0.1) ;
 }
+
 .box.yellow{
+    color:hsl(39, 100%, 56%);
     background-color: hsl(39, 100%, 56%, 0.1);
 }
 .box.green{
+    color:hsl(166, 100%, 37%);
     background-color: hsl(166, 100%, 37%, 0.1);
 }
+.box.blue{
+    background-color:  hsl(234, 85%, 45%, 0.1);
+    color:hsl(234, 85%, 45%);
+}
+.righttext{
+    color:black;
+    display: flex;
+    min-width: 4em;
+    justify-content: space-around;
+}
+.righttext .fraction{
+    color:hsl(224, 30%, 27%, 0.5);
+}
+.continue{
+    border: solid;
+    border-radius: 50px;
+    color: white;
+    background-color:hsl(224, 30%, 27%);
+    margin-top: 1.6em;
+    min-width: 100%;
+    min-height: 100%;
 
+    
+}
+.continue:active{
+
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+
+}
